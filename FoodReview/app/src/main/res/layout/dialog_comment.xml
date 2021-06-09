@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Bình luận"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#0984e3"/>
+    <EditText
+        android:id="@+id/edt_comComment"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:hint="Nhập bình luận"
+        android:text=""
+        android:textColor="@color/black"/>
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/iv_comImage"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"/>
+
+    <Button
+        android:id="@+id/btn_comImg"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#0984e3"
+        android:textSize="20dp"
+        android:text="Thêm hình" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/btn_comFinish"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#00b894"
+        android:textSize="25dp"
+        android:text="Xong" />
+
+</LinearLayout>

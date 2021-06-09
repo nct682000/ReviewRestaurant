@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_weight="7"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:hint="Tìm kiếm quán ăn, món ăn"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"/>
+        <Spinner
+            android:background="@color/white"
+            android:id="@+id/sp_province"
+            android:layout_width="120dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_add"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Thêm"
+        android:textSize="8dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+        <ViewFlipper
+            android:id="@+id/vf_vf"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <GridView
+            android:id="@+id/gv_res"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:padding="10dp"
+            android:verticalSpacing="10dp"
+            android:scrollbars="none"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|center">
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_margin="2dp"
+            android:layout_width="95dp"
+            android:layout_height="55dp"
+            app:icon="@drawable/ic_baseline_home_24"
+            android:backgroundTint="#d63031"/>
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_margin="2dp"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            app:icon="@drawable/ic_baseline_save_24"
+            android:backgroundTint="#af9ffc"/>
+        <Button
+            android:layout_margin="2dp"
+            android:id="@+id/btn_2"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            app:icon="@drawable/ic_baseline_notifications_none_24"
+            android:backgroundTint="#55fcd8"/>
+        <Button
+            android:layout_margin="2dp"
+            android:id="@+id/btn_3"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            app:icon="@drawable/ic_baseline_account_circle_24"
+            android:backgroundTint="#8ffbfa"/>
+
+    </LinearLayout>
+
+</LinearLayout>

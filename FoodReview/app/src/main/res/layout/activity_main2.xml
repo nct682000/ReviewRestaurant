@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Thông báo"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:background="#00b894"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_order"
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:text="Order"
+            android:textColor="#00b894"
+            android:textSize="15dp"/>
+        <Button
+            android:id="@+id/btn_social"
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:text="Social"
+            android:textColor="#636e72"
+            android:textSize="15dp"/>
+        <Button
+            android:id="@+id/btn_news"
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:text="News"
+            android:textColor="#636e72"
+            android:textSize="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#00b894"/>
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:id="@+id/tv_social"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_news"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ll_act21"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:background="@color/purple_700"
+                android:layout_height="400dp"
+                android:gravity="center"
+                android:textSize="50dp"
+                android:text="Activity 2.1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_act22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:background="@color/purple_200"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:gravity="center"
+                android:textSize="50dp"
+                android:text="Activity 2.2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_act23"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:background="@color/purple_500"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:gravity="center"
+                android:textSize="50dp"
+                android:text="Activity 2.3"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|center">
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_margin="2dp"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            app:icon="@drawable/ic_baseline_home_24"
+            android:backgroundTint="#fb9697"/>
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_margin="2dp"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            app:icon="@drawable/ic_baseline_save_24"
+            android:backgroundTint="#af9ffc"/>
+        <Button
+            android:layout_margin="2dp"
+            android:id="@+id/btn_2"
+            android:layout_width="95dp"
+            android:layout_height="55dp"
+            app:icon="@drawable/ic_baseline_notifications_none_24"
+            android:backgroundTint="#00b894"/>
+        <Button
+            android:layout_margin="2dp"
+            android:id="@+id/btn_3"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            app:icon="@drawable/ic_baseline_account_circle_24"
+            android:backgroundTint="#8ffbfa"/>
+
+    </LinearLayout>
+</LinearLayout>

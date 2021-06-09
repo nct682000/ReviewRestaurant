@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="#00b894"/>
+    <EditText
+        android:id="@+id/edt_userLog"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:hint="Tên đăng nhập"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/edt_passLog"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/btn_log"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#00b894"
+            android:textSize="20dp"
+            android:text="Đăng nhập ngay" />
+        <Button
+            android:id="@+id/btn_regLog"
+            android:layout_marginLeft="40dp"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#0984e3"
+            android:textSize="20dp"
+            android:text="Đăng ký" />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/btn_forgotPass"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:textColor="#636e72"
+        android:backgroundTint="@color/white"
+        android:textSize="15dp"
+        android:text="Quên mật khẩu" />
+
+</LinearLayout>
